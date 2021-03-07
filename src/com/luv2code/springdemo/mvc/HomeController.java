@@ -9,4 +9,14 @@ public class HomeController {
 	public String showPage() {
 		return "main-menu";
 	}
+	
+	@RequestMapping("/showLocations") 
+	public String showLocations() {
+		return "locations-list";
+	}
+	
+	@RequestMapping("/showRestaurants") 
+	public String showRestaurants() {
+		return "restaurant-list";
+	}
 }

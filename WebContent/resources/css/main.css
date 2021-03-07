@@ -1,0 +1,134 @@
+@charset "ISO-8859-1";
+
+.myButton {
+	font-family: Verdana;
+	display: block;
+	text-align: center;
+	background-color: #5d34d6;
+	align: center;
+	margin: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 20px;
+	color: white;
+}
+
+.myHomeButton {
+	font-family: Verdana;
+	display: block;
+	background-color: #564A78;
+	margin: 10px;
+	margin-left: 15px;
+	width: 200px;
+	padding: 20px;
+	color: white;
+}
+
+.myHomeButton a:hover {
+	background-color: #7868A3;
+}
+
+a {
+	color: white;
+	font-family: Verdana;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2a2573;
+	background-color: #9b87d8;
+}
+
+
+
+.header {
+	font-family: Verdana;
+	color: white;
+	background-color:  #9b87d8;
+	padding-bottom:0px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #564A78;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.header li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header li:hover {
+	background-color: #7868A3;
+}
+
+.header a:hover {
+	background-color: #7868A3;
+}
+
+.header img {
+	display: inline;
+	text-align: right;
+	height: 80px;
+	width: 80px;
+	border-radius:10px;
+}
+
+h1, h2 {
+	width: 90%;
+	color: white;
+	font-family: Verdana;
+	padding-left: 20px;
+	text-align: left;
+	display: inline-block;
+	font-size: 48px;
+}
+
+.card {
+	width: 325px;
+	margin-left: 20%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.btn-primary {
+	font-family: Verdana;
+	background-color: #564A78;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #9b87d8;
+	color: #2a2573;
+	border: none;
+}
+
+
+body {
+	background-color: #99c3d4;
+}
