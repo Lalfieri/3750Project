@@ -27,6 +27,8 @@ public class Customer {
 	@CourseCode
 	private String courseCode;
 	
+	private String city;
+	
 	public Integer getFreePasses() {
 		return freePasses;
 	}
@@ -56,6 +58,12 @@ public class Customer {
 	}
 	public void setCourseCode(String courseCode) {
 		this.courseCode = courseCode;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 }

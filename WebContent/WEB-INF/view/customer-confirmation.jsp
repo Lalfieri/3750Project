@@ -16,6 +16,8 @@
 		Postal Code: ${customer.postalCode}
 		<br>
 		Course Code: ${customer.courseCode}
+		<br>
+		City: ${customer.city}
 	</body>
 	
 </html>
