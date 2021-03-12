@@ -13,7 +13,7 @@
 	</head>
 	
 	<body>
-		Please fill out the form. (*) indicates a required field.<br>
+		Welcome to MenU! Let's get started.<br><br>
 		<form:form action="processForm" modelAttribute="customer">
 			
 			First Name: <form:input path = "firstName" />
@@ -33,7 +33,15 @@
 			Course Code: <form:input path="courseCode"/>
 			<form:errors path="courseCode" cssClass="error"/>
 			
-			<input type="submit" value="Submit"/>
+			<br><br>
+	        Choose a city: <form:select path="City">  
+		        <form:option value="Guelph" label="Guelph"/>  
+		        <form:option value="Barry" label="Barry"/>  
+		        <form:option value="Windsor" label="Windsor"/>  
+		        <form:option value="Hamilton" label="Hamilton"/>  
+        	</form:select>  
+			
+			<input type="submit" value="Submit">
 			
 		</form:form>
 	
