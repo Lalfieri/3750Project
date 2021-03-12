@@ -8,6 +8,8 @@
 		
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
+		
 		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 		
 		<style>
@@ -20,6 +22,10 @@
 		<div class="header">
 			<h1>MenU - Business Create New Account</h1>
 			<img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
+			<ul>
+			  <li><a href="">Home</a></li>
+			  <li><a href="">Contact Us</a></li>
+			</ul>
 		</div>
 		
 		Welcome to MenU! Let's get started.<br><br>

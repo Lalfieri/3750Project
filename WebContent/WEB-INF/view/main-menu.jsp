@@ -18,6 +18,7 @@
 	</div>
 	
 	<a class="btn myHomeButton" href="showLocations">Show Locations</a>
+	<a class="btn myHomeButton" href="business/login">Business Login</a>
 	</body>
 
 </html>

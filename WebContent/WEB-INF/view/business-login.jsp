@@ -12,6 +12,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 	</head>
 	
@@ -19,7 +20,13 @@
 		<div class="header">
 			<h1>MenU - Business Login</h1>
 			<img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
+			<ul>
+			  <li><a href="">Home</a></li>
+			  <li><a href="">Contact Us</a></li>
+			</ul>
 		</div>
+		
+		<div>
 		
 		<form:form action="login" modelAttribute="business">
 			Email: <form:input path="email"/>
@@ -32,6 +39,8 @@
 			<br><br>
 			<input type="submit" value="Login">
 		</form:form>
+		
+		</div>
 
 		<br><br>
 		Don't have an account with us?
