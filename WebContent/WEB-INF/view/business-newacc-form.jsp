@@ -5,7 +5,10 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Business User Registration</title>
+		
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 		
 		<style>
 			.error {color:red}
@@ -13,6 +16,12 @@
 	</head>
 	
 	<body>
+	
+		<div class="header">
+			<h1>MenU - Business Create New Account</h1>
+			<img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
+		</div>
+		
 		Welcome to MenU! Let's get started.<br><br>
 		<form:form action="processForm" modelAttribute="business">
 			

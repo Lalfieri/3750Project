@@ -27,6 +27,8 @@ public class BusinessController {
 	public String login(@Valid @ModelAttribute("business") Business theBusiness,
 			BindingResult theBindingResult) {
 		
+		//comparison to accounts database happens here
+		
 		if(theBindingResult.hasErrors()) {
 			System.out.println("Login has errors");
 			return "business-login";
