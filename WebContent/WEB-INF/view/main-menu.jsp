@@ -3,8 +3,8 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css"/>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 </head>
 	<body>
