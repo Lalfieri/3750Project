@@ -28,38 +28,46 @@
 			</ul>
 		</div>
 		
-		Welcome to MenU! Let's get started.<br><br>
-		<form:form action="processForm" modelAttribute="business">
-			
-			First Name (*): <form:input path="firstName" />
-			<form:errors path="firstName" cssClass="error"/>
-			
-			<br><br>
-			Last Name (*): <form:input path="lastName"/>
-			<form:errors path="lastName" cssClass="error"/>
+		<div class="myForm">
+			<div class="myHeader">
+				Welcome to MenU! Let's get started.
+			</div>
 			
 			<br><br>
-			Phone Number (*): <form:input path="phoneNum"/>
-			<form:errors path="phoneNum" cssClass="error"/>
+			<form:form action="processForm" modelAttribute="business">
+				
+				<label>First Name (*):</label><form:input path="firstName" />
+				<form:errors path="firstName" cssClass="error"/>
+				
+				<br><br>
+				<label>Last Name (*):</label><form:input path="lastName"/>
+				<form:errors path="lastName" cssClass="error"/>
+				
+				<br><br>
+				<label>Phone Number (*):</label><form:input path="phoneNum"/>
+				<form:errors path="phoneNum" cssClass="error"/>
+				
+				<br><br>
+				<label>Email (*):</label><form:input path="email"/>
+				<form:errors path="email" cssClass="error"/>
+				
+				<br><br>
+				<label>Password (*):</label><form:input path="passWord" id="pw" type="password"/>
+				<form:errors path="passWord" cssClass="error"/>
 			
-			<br><br>
-			Email (*): <form:input path="email"/>
-			<form:errors path="email" cssClass="error"/>
-			
-			<br><br>
-			Password (*): <form:input path="passWord" id="pw" type="password"/>
-			<form:errors path="passWord" cssClass="error"/>
-			
-			<input type="checkbox" onclick="toggleShow()">Show Password
-			<br><br>
-			
-			Re-enter Password (*): <form:input path="passWord2" id="pwc" type="password"/>
-			<form:errors path="passWord2" cssClass="error"/>
-			<br><br>
-			
-			<input type="submit" value="Submit">
-			
-		</form:form>
+				<br><br>	
+				<label>Re-enter Password (*):</label><form:input path="passWord2" id="pwc" type="password"/>
+				<form:errors path="passWord2" cssClass="error"/>
+				<br><br>
+				<input type="checkbox" onclick="toggleShow()">Show Password
+				
+				<br><br>
+				<div class="button">
+					<input type="submit" value="Submit">
+				</div>
+				
+			</form:form>
+		</div>
 		
 		<script>
 			function toggleShow() {

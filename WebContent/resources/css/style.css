@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+label,
+input {
+  /* In order to define widths */
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label+input {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+           and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 8%;
+
+}
+
+.myForm
+{
+    text-align: center;
+    font-family: Verdana;
+    margin: auto;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.myHeader
+{
+	font-family: Verdana;
+	text-align: center;
+	font-size: 120%;
+	margin: auto;
+	background-color:  #9b87d8;
+	padding-bottom:10px;
+	padding-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button
+{
+	font-family: Verdana;
+	text-align: center;
+}

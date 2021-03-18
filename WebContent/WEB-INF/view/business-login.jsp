@@ -26,28 +26,49 @@
 			</ul>
 		</div>
 		
-		<div>
+		<div class="myForm">
 		
-		<form:form action="login" modelAttribute="business">
-			Email: <form:input path="email"/>
-			<form:errors path="email" cssClass="error"/>
-			
+			<div class="myHeader">
+				Login with an existing account
+			</div>
 			<br><br>
-			Password: <form:input path="passWord"/>
-			<form:errors path="passWord" cssClass="error"/>
-			
+		
+			<form:form action="login" modelAttribute="business">
+				<label>Email: </label><form:input path="email"/>
+				<form:errors path="email" cssClass="error"/>
+				
+				<br><br>
+				<label>Password: </label><form:input id="pw" path="passWord" type="password"/>
+				<form:errors path="passWord" cssClass="error"/>
+
+				<br><br>
+				<input type="checkbox" onclick="toggleShow()">Show Password
+				
+				<br><br>
+				<div class="button">
+					<input type="submit" value="Login">
+				</div>
+			</form:form>
+	
 			<br><br>
-			<input type="submit" value="Login">
-		</form:form>
+			Don't have an account with us?
+			<br><br>
+			
+			Create one
+			<a href="newAccount">here</a>
 		
 		</div>
-
-		<br><br>
-		Don't have an account with us?
-		<form:form action="newAccount" modelAttribute="business">
-			<input type="submit" value="Create Account">
-			
-		</form:form>
+		
+		<script>
+			function toggleShow() {
+			  var first = document.getElementById("pw");
+			  if (first.type === "password") {
+			    first.type = "text";
+			  } else {
+			    first.type = "password";
+			  }
+			}
+		</script>
 	
 	</body>
 </html>

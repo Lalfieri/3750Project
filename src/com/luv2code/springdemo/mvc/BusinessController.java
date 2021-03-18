@@ -15,8 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/business")
 public class BusinessController {
+	
+	@RequestMapping("/")
+	public String showPage() {
+		System.out.println("Returning to main menu");
+		return "main-menu";
+	}
 
-	@RequestMapping("/showForm")
+	@RequestMapping("/signin")
 	public String showForm(Model theModel) {
 		theModel.addAttribute("business", new Business());
 		
@@ -32,8 +38,7 @@ public class BusinessController {
 		if(theBindingResult.hasErrors()) {
 			System.out.println("Login has errors");
 			return "business-login";
-		}
-		else {
+		} else {
 			return "bullshit";
 		}
 		
@@ -54,6 +59,8 @@ public class BusinessController {
 	public String processForm(@Valid @ModelAttribute("business") Business theBusiness,
 			BindingResult theBindingResult) {
 		
+		//compare to database
+		
 		if ((theBusiness.getPassWord() != null && theBusiness.getPassWord2() != null) && 
 				(!theBusiness.getPassWord().equals(theBusiness.getPassWord2()))) {
 			System.out.println("Passwords do not match");
@@ -61,6 +68,15 @@ public class BusinessController {
 			theBindingResult.addError(error);
 			return "business-newacc-form";
 		}
+		
+		if ((theBusiness.getEmail() != null && theBusiness.getEmail() != null) && 
+				theBusiness.getEmail().equals("admin@gmail.com") && theBusiness.getPassWord().equals("theadmin")) {
+			System.out.println("Account exists");
+			FieldError error = new FieldError("email", "email", "Account already exists with this email.");
+			theBindingResult.addError(error);
+			theBusiness.resetInfo();
+			return "business-newacc-form";
+		} 
 		
 		if(theBindingResult.hasErrors()) {
 			System.out.println("Errors detected in submission, redirecting");
