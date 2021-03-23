@@ -1,0 +1,270 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #292338;
+}
+
+.header {
+	font-family: Verdana;
+	color: white;
+	background-color:  #8f46a3;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
+	margin-bottom: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.header img {
+	display: inline-block;
+	text-align: right;
+	vertical-align:middle;
+	height: 80px;
+	width: 80px;
+	border-radius:10px;
+}
+
+.navBar {
+	background-color: #612273;
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.navBar ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #612273;
+	width: 100%;
+	margin-top: 0px;
+}
+.navBar li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navBar li:hover {
+	background-color: #892ea3;
+}
+
+.navBar a:hover {
+	background-color: #892ea3;
+}
+
+h1, h2 {
+	width: 90%;
+	color: white;
+	font-family: Verdana;
+	padding-left: 20px;
+	text-align: left;
+	display: inline-block;
+	font-size: 48px;
+}
+
+.container {
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 5px auto auto auto auto auto auto 5px;
+	grid-template-rows: 5px 50px 50px 50px 50px 50px 50px 50px  5px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+
+.container .ordersBox {
+	
+	display: grid;
+	grid-template-columns: 5px auto 5px;
+	grid-template-rows: 5px 30px auto 5px;
+	grid-column-start: 2;
+  	grid-column-end: 3;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 8;
+
+	background-color: #8f46a3;
+
+}
+
+.ordersBox .orderTitle {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	border: solid;
+  	border-width: 1px;
+
+}
+
+p {
+	padding: 5px 5px 5px 5px;
+	margin: 0 0 0 0;
+}
+
+
+.ordersBox .content {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 3;
+  	grid-row-end: 3;
+  	
+  	border: solid;
+  	border-width: 1px;
+  	overflow-y: scroll;
+}
+
+.container .accDecBox {
+	
+	grid-column-start: 3;
+  	grid-column-end: 5;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 4;
+  	background-color: #64bfd9;
+  	
+  	display: grid;
+	grid-template-columns: 5px auto 5px;
+	grid-template-rows: 5px 30px auto 5px;
+}
+
+.accDecBox .title {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	border: solid;
+  	border-width: 1px;
+}
+
+.accDecBox .content {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 3;
+  	grid-row-end: 3;
+  	
+  	border: solid;
+  	border-width: 1px;
+  	
+  	display: grid;
+	grid-template-columns: 10px auto 10px auto 10px;
+	grid-template-rows: 10px auto 10px;
+}
+
+.accDecBox .accept {
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	
+}
+
+.accDecBox .decline {
+	grid-column-start: 4;
+  	grid-column-end: 4;
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	
+}
+
+.container .contBox {
+	
+	grid-column-start: 5;
+  	grid-column-end: 8;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 8;
+  	background-color: #8f46a3;
+  	display: grid;
+	grid-template-columns: 5px auto 5px;
+	grid-template-rows: 5px 30px auto 5px;
+}
+
+.contBox .title {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	border: solid;
+  	border-width: 1px;
+}
+
+.contBox .content {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 3;
+  	grid-row-end: 3;
+  	
+  	border: solid;
+  	border-width: 1px;
+  	overflow-y: scroll;
+}
+
+
+
+.container .userInfoBox {
+	grid-column-start: 3;
+  	grid-column-end: 5;
+  	
+  	grid-row-start: 4;
+  	grid-row-end: 7;
+  	background-color: #64bfd9;
+  	display: grid;
+	grid-template-columns: 5px auto 5px;
+	grid-template-rows: 5px 30px auto 5px;
+}
+
+.userInfoBox .title {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 2;
+  	grid-row-end: 2;
+  	border: solid;
+  	border-width: 1px;
+}
+
+.userInfoBox .content {
+	background-color: white;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	
+  	grid-row-start: 3;
+  	grid-row-end: 3;
+  	
+  	border: solid;
+  	border-width: 1px;
+  	overflow-y: scroll;
+}
+
+p.userInfo {
+	padding: 5px 5px 5px 5px;
+	margin: 0 0 0 0;
+}
+
+
+	

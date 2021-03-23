@@ -7,6 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 	@RequestMapping("/")
 	public String showPage() {
+		System.out.println("Returning to main menu");
 		return "main-menu";
+	}
+	
+	@RequestMapping("/showLocations") 
+	public String showLocations() {
+		return "locations-list";
+	}
+	
+	@RequestMapping("/showRestaurants") 
+	public String showRestaurants() {
+		return "restaurant-list";
 	}
 }
