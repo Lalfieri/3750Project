@@ -17,7 +17,15 @@
 		</ul>
 	</div>
 	
+	<div id="baMenu">
+		<!-- menu to navigate business account pages -->
+	</div>
 	
+	<div id="uploadMenuOptions">
+		<!-- buttons for upload menu options -->
+		<a class="btn myHomeButton">Enter Items Manually</a>
+		<a class="btn myHomeButton">Upload From CSV</a>
+	</div>
 
 	</body>
 
