@@ -9,7 +9,7 @@
 </head>
 	<body>
 	<div class="header">
-		<h1>MenU - Home</h1>
+		<h1>MenU - Business Menu Page</h1>
 		<img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
 		<ul>
 		  <li><a href="">Home</a></li>
@@ -17,9 +17,8 @@
 		</ul>
 	</div>
 	
-	<a class="btn myHomeButton" href="showLocations">Show Locations</a>
-	<a class="btn myHomeButton" href="business/signin">Business Login</a>
-	<a class="btn myHomeButton" href="business/showBusinessMenu">Business Menu Page</a>
+	
+
 	</body>
 
 </html>

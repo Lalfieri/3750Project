@@ -20,4 +20,5 @@ public class HomeController {
 	public String showRestaurants() {
 		return "restaurant-list";
 	}
+
 }

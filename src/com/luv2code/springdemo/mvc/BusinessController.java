@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/business")
 public class BusinessController {
 	
+	@RequestMapping("/showBusinessMenu") 
+	public String showBusinessMenu() {
+		return "business-menu";
+	}
+	
 	@RequestMapping("/")
 	public String showPage() {
 		System.out.println("Returning to main menu");
