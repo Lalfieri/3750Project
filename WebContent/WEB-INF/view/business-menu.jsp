@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Home</title>
+	<title>Business Menu Page</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
@@ -23,7 +23,7 @@
 	
 	<div id="uploadMenuOptions">
 		<!-- buttons for upload menu options -->
-		<a class="btn myHomeButton">Enter Items Manually</a>
+		<a class="btn myHomeButton" href="menuItem">Enter Items Manually</a>
 		<a class="btn myHomeButton">Upload From CSV</a>
 	</div>
 

@@ -21,6 +21,11 @@ public class BusinessController {
 		return "business-menu";
 	}
 	
+	@RequestMapping("/menuItem") 
+	public String menuItem() {
+		return "menu-item-form";
+	}
+	
 	@RequestMapping("/")
 	public String showPage() {
 		System.out.println("Returning to main menu");

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.menuForm {
+    text-align: center;
+    font-family: Verdana;
+    margin: auto;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.menuItemFormBtn {
+	width: 15%;
+	white-space: normal;
+	border-radius: 8px;
+	background-color: #564A78;
+	color: white;
+}
+
+#menuItemButtons {
+	text-align: center;
+	display: block;
+}
