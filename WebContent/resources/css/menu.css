@@ -16,7 +16,54 @@
 	color: white;
 }
 
+.businessMenu {
+	padding-right: 10%;
+	float: right;
+	width: 80%;
+}
+
+.vertical-menu {
+  width: 17%; /* Set a width if you like */
+  padding-left: 2%; 
+  float: left;
+}
+
+.vertical-menu a {
+  background-color: #7868A3; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 7px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #564A78; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #564A78; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+.myMenuButton {
+	font-family: Verdana;
+	font-size: 13px;
+	display: block;
+	background-color: #564A78;
+	margin: 10px;
+	margin-left: 15px;
+	width: 200px;
+	padding: 8px;
+	color: white;
+}
+
 #menuItemButtons {
 	text-align: center;
 	display: block;
+}
+
+#uploadMenuOptions {
+	float: right;
+	padding-right: 15%;
+	
 }
