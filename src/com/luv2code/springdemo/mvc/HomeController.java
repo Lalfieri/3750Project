@@ -20,4 +20,9 @@ public class HomeController {
 	public String showRestaurants() {
 		return "restaurant-list";
 	}
+	
+	@RequestMapping("/test") 
+	public String showTest() {
+		return "test";
+	}
 }

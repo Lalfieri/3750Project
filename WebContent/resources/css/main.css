@@ -102,6 +102,28 @@ h1, h2 {
 	font-size: 48px;
 }
 
+h3 {
+	width: 90%;
+	color: white;
+	font-family: Verdana;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	display: inline-block;
+	font-size: 32px;	
+}
+
+h4 {
+	width: 90%;
+	color: white;
+	font-family: Verdana;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	display: inline-block;
+	font-size: 16px;	
+}
+
 .card {
 	width: 325px;
 	margin-left: 20%;

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Home</title>
+	<title>Test</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
@@ -17,9 +17,9 @@
 		</ul>
 	</div>
 	
-	<a class="btn myHomeButton" href="showLocations">Show Locations</a>
-	<a class="btn myHomeButton" href="business/signin">Business Login</a>
-	<a class="btn myHomeButton" href="test">Test Button</a>
+	<a class="btn myHomeButton" href="goBack">Go Back I want to be Monke</a>
+	<a class="btn myHomeButton" href="restaurantMenu">I want to see Menu plz</a>
+
 	</body>
 
 </html>

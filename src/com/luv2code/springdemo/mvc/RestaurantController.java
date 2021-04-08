@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/business")
-public class BusinessController {
+public class RestaurantController {
 	
 	@RequestMapping("/")
 	public String showPage() {
