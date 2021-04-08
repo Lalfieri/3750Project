@@ -27,6 +27,8 @@
 		<br>
 		<label id="itemNameLbl">Item Name: </label>
 		<input type="text" id="itemNameIn"> <br><br>
+		<label id="itemNameLbl">Category: </label>
+		<input type="text" id="categoryIn"> <br><br>
 		<label id="itemDescLbl">Item Description: </label>
 		<input type="text" id="itemDescIn"> <br><br>
 		<label id="itemPriceLbl">Item Price: </label>
@@ -35,7 +37,7 @@
 	
 	<div id="menuItemButtons" class="btn-group"> <br>
 		<input type="button" id="saveAndNew" class="menuItemFormBtn" value="Save and New Item">
-		<input type="button" id="saveAndFinish" class="menuItemFormBtn" value="Save and Finish">
+		<input type="button" id="saveAndFinish" class="menuItemFormBtn" value="Save and Finish" href="business/showBusinessMenu">
 		<input type="button" id="Cancel" class="menuItemFormBtn" value="Cancel">
 	</div>
 

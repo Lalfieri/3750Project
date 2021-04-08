@@ -48,7 +48,7 @@
 			<tr>
 				<td> Veggie Burger </td>
 				<td> Entree </td>
-				<td> Plant base patty with lettuce, tomato, and pickles. Add cheese for 25¢ </td>
+				<td> Plant based patty with lettuce, tomato, and pickles. Add cheese for 25¢ </td>
 				<td> $5.99 </td>
 			</tr>
 			<tr>
