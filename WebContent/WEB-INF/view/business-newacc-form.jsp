@@ -23,7 +23,7 @@
 			<h1>MenU - Business Create New Account</h1>
 			<img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
 			<ul>
-			  <li><a href="">Home</a></li>
+			  <li><a href="home">Home</a></li>
 			  <li><a href="">Contact Us</a></li>
 			</ul>
 		</div>

@@ -20,6 +20,14 @@ label+input {
 
 }
 
+.block {
+	font-family: Verdana;
+	border: 2px solid black;
+	text-align: center;
+	margin: auto;
+	width: 50%;
+}
+
 .myForm
 {
     text-align: center;

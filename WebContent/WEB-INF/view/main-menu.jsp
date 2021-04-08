@@ -19,6 +19,7 @@
 	
 	<a class="btn myHomeButton" href="showLocations">Show Locations</a>
 	<a class="btn myHomeButton" href="business/signin">Business Login</a>
+	<a class="btn myHomeButton" href="order/showOrder">Show Incoming Orders</a>
 	</body>
 
 </html>

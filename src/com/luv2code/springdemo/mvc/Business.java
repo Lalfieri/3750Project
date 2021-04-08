@@ -10,6 +10,20 @@ import com.luv2code.springdemo.mvc.validation.CourseCode;
 
 public class Business {
 	
+	public Business () {
+		//System.out.println("Business created with nothing");
+	}
+	
+	public Business (String firstName, String lastName, String phoneNum, String email, String passWord) {
+		//System.out.println("Business created with data");
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNum = phoneNum;
+		this.email = email;
+		this.passWord = passWord;
+		this.passWord2 = passWord;
+	}
+	
 	@NotNull(message="field is required")
 	private String firstName;
 	

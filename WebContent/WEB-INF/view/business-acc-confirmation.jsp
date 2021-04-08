@@ -5,22 +5,39 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
+		
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
+		
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
+		
 		<title>Business Account Confirmation</title>
 	</head>
 	
 	<body>
-		Welcome to MenU!
-		<br><br>
-		Account created under: ${business.firstName} ${business.lastName}
-		<br><br>
-		Registered phone number: ${business.phoneNum}
-		<br><br>
-		Email: ${business.email}
+					
+		<div class="header">
+			<h1>Welcome to MenU!</h1>
+		    <img src="${pageContext.request.contextPath}/resources/images/Logo_1Colour.jpg"/>
+			<ul>
+				<li><a href="home">Home</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</div>
 		
-		<form:form action="Continue" modelAttribute="business">
-			<input type="submit" value="Get Started">
+		<div class="block">
+			Account created under: ${business.firstName} ${business.lastName}
+			<br><br>
+			Registered phone number: ${business.phoneNum}
+			<br><br>
+			Email: ${business.email}
 			
-		</form:form>
+			<form:form action="sendBiz">
+				<input type="submit" value="Get Started">
+				
+			</form:form>
+		</div>
 		
 	</body>
 	
